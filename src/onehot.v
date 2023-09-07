@@ -17,6 +17,6 @@ module tt_um_onehot(
   assign uo_out[5]= ui_in[0] & ~ui_in[1] & ui_in[2];
   assign uo_out[6]= ~ui_in[0] & ui_in[1] & ui_in[2];
   assign uo_out[7]= ui_in[0] & ui_in[1] & ui_in[2];
-    assign [7:0]uio_out = 8'b00000000;
-    assign [7:0]uio_oe = 8'b00000000;
+    assign uio_out[7:0] = 8'b00000000;
+    assign uio_oe[7:0] = 8'b00000000;
 endmodule
