@@ -8,6 +8,7 @@ module tt_um_onehot(
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
+    
   assign uo_out[0]= ~ui_in[0] & ~ui_in[1] & ~ui_in[2];
   assign uo_out[1]= ui_in[0] & ~ui_in[1] & ~ui_in[2];
   assign uo_out[2]= ~ui_in[0] & ui_in[1] & ~ui_in[2];
